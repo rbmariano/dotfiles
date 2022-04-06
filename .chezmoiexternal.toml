@@ -18,3 +18,9 @@
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
+
+[".oh-my-zsh/custom/themes/powerlevel10k"]
+    type = "git-repo"
+    url = "https://github.com/romkatv/powerlevel10k.git"
+    exact = true
+    stripComponents = 1
