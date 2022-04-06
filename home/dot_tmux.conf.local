@@ -389,6 +389,18 @@ tmux_conf_uninstall_plugins_on_reload=true
 #set -g @plugin 'tmux-plugins/tmux-continuum'
 #set -g @continuum-restore 'on'
 
+set -g @plugin 'dracula/tmux'
+
+# available plugins: battery, cpu-usage, gpu-usage, ram-usage, network, network-bandwith, weather, time
+set -g @dracula-plugins "battery time"
+set -g @dracula-show-powerline true
+set -g @dracula-show-left-icon  
+set -g @dracula-show-timezone false
+set -g @dracula-day-month true
+set -g @dracula-git-disable-status true
+set -g @dracula-battery-colors "light_purple white"
+
+
 
 # -- custom variables ----------------------------------------------------------
 
