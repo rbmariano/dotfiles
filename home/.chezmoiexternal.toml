@@ -1,3 +1,10 @@
+[".fzf"]
+    type = "archive"
+    url = "https://github.com/junegunn/fzf/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "24h"
+
 [".oh-my-zsh"]
     type = "archive"
     url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
@@ -33,12 +40,6 @@
     stripComponents = 1
     refreshPeriod = "24h"
 
-[".fzf"]
-    type = "archive"
-    url = "https://github.com/junegunn/fzf/archive/master.tar.gz"
-    exact = true
-    stripComponents = 1
-    refreshPeriod = "24h"
 
 [".local/share/fonts/MesloLGS NF Regular.ttf"]
     type = "file"
