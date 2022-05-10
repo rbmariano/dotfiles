@@ -1,2 +1,0 @@
-#!/bin/sh
-~/.fzf/install
