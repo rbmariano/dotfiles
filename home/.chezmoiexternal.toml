@@ -1,8 +1,6 @@
 [".fzf"]
-    type = "archive"
-    url = "https://github.com/junegunn/fzf/archive/master.tar.gz"
-    exact = true
-    stripComponents = 1
+    type = "git-repo"
+    url = "https://github.com/junegunn/fzf.git"
     refreshPeriod = "24h"
 
 [".oh-my-zsh"]
