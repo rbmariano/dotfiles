@@ -1,33 +1,17 @@
 -----------------------------------------------------------
--- Indent line configuration file
------------------------------------------------------------
+-- Indent Blankline configuration file
+----------------------------------------------------------
 
--- Plugin: indent-blankline
+-- Plugin: indent_blankline
 -- url: https://github.com/lukas-reineke/indent-blankline.nvim
 
+vim.opt.list = true
+vim.opt.listchars:append("space:⋅")
+vim.opt.listchars:append("eol:↴")
 
-local status_ok, indent_blankline = pcall(require, 'indent_blankline')
-if not status_ok then
-  return
-end
-
-indent_blankline.setup {
-  char = "▏",
-  use_treesitter = true,
-  show_first_indent_level = false,
-  filetype_exclude = {
-    'help',
-    'dashboard',
-    'git',
-    'markdown',
-    'text',
-    'terminal',
-    'lspinfo',
-    'packer',
-    'NvimTree',
-  },
-  buftype_exclude = {
-    'terminal',
-    'nofile',
-  },
+require("indent_blankline").setup {
+    use_treesitter = true,
+    space_char_blankline = " ",
+    show_current_context = true,
+    show_current_context_start = true,
 }

@@ -88,6 +88,11 @@ for _, plugin in pairs(disabled_built_ins) do
 end
 
 -----------------------------------------------------------
+-- Theme
+-----------------------------------------------------------
+vim.cmd[[colorscheme dracula]]
+
+-----------------------------------------------------------
 -- Autocommands
 -----------------------------------------------------------
 
@@ -130,4 +135,5 @@ cmd [[
   autocmd TermOpen * startinsert
   autocmd BufLeave term://* stopinsert
 ]]
+
 

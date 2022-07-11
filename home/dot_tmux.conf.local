@@ -347,6 +347,7 @@ tmux_conf_copy_to_os_clipboard=false
 # move status line to top
 #set -g status-position top
 
+set -g default-terminal "tmux-256color"
 
 # -- tpm -----------------------------------------------------------------------
 
@@ -394,7 +395,7 @@ set -g @plugin 'dracula/tmux'
 # available plugins: battery, cpu-usage, gpu-usage, ram-usage, network, network-bandwith, weather, time
 set -g @dracula-plugins "battery time"
 set -g @dracula-show-powerline true
-set -g @dracula-show-left-icon  
+set -g @dracula-show-left-icon 
 set -g @dracula-show-timezone false
 set -g @dracula-day-month true
 set -g @dracula-git-disable-status true

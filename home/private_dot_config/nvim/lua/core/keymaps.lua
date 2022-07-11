@@ -64,3 +64,4 @@ map('n', '<leader>n', ':NvimTreeFindFile<CR>')      -- search file
 
 -- Vista tag-viewer
 map('n', '<C-m>', ':Vista!!<CR>') -- open/close
+
