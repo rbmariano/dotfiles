@@ -401,8 +401,6 @@ set -g @dracula-day-month true
 set -g @dracula-git-disable-status true
 set -g @dracula-battery-colors "light_purple white"
 
-
-
 # -- custom variables ----------------------------------------------------------
 
 # to define a custom #{foo} variable, define a POSIX shell function between the

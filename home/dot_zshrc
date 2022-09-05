@@ -110,6 +110,21 @@ export EDITOR='nvim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+
+# exa 
+alias ls='exa --icons'                                                         # ls
+alias l='exa -lbF --git --icons'                                               # list, size, type, git
+alias ll='exa -lbGF --git --icons'                                             # long list
+alias llm='exa -lbGF --git --sort=modified --icons'                            # long list, modified date sort
+alias la='exa -lbhHigUmuSa --time-style=long-iso --git --color-scale --icons'  # all list
+alias lx='exa -lbhHigUmuSa@ --time-style=long-iso --git --color-scale --icons' # all + extended list
+alias lS='exa -1 --icons'			                               # one column, just names
+alias lt='exa --tree --level=2 --icons'                                        # tree
+
+# bat 
+alias cat='bat'
+export BAT_THEME="Dracula"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -119,4 +134,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # FZF Config
+export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

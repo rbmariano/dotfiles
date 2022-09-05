@@ -38,6 +38,17 @@
     stripComponents = 1
     refreshPeriod = "24h"
 
+["~/.config/nvim"]
+    type = "git-repo"
+    url = "https://github.com/LunarVim/nvim-basic-ide.git"
+    refreshPeriod = "24h"
+
+[".local/share/fonts"]
+    type = "archive"
+    url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "24h"
 
 [".local/share/fonts/MesloLGS NF Regular.ttf"]
     type = "file"
