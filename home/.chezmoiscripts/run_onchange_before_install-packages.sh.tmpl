@@ -18,6 +18,10 @@
      "sublime-text"
 -}}
 
+{{ $sudo := "sudo " -}}
+{{ if eq .chezmoi.username "root" -}}
+{{   $sudo = "" -}}
+{{ end -}}
 
 #!/bin/bash
 

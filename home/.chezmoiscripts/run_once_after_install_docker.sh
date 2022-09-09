@@ -11,12 +11,3 @@ sudo systemctl enable containerd.service
 sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
-
-
-# FSTRIM - SSD
-sudo systemctl enable fstrim.timer
-sudo systemctl start fstrim.timer
-
-
-# Set ZSH default shell
-chsh -s $(which zsh)
