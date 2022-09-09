@@ -1,0 +1,27 @@
+{{ $packages := list
+     "zsh"
+     "tmux"
+     "alacritty"
+     "jq"
+     "docker"
+     "docker-compose"
+     "ttf-fira-code"
+     "mysql-workbench"
+     "exa"
+     "bat"
+     "btop"
+     "git-delta"
+     "lazygit"
+     "glow"
+     "dotnet-sdk"
+     "aspnet-runtime"
+     "sublime-text"
+-}}
+
+
+#!/bin/bash
+
+set -eufo pipefail
+
+{{ $sudo }}pacman -Ssy
+{{ $sudo }}pacman -Syu {{ $packages | join " " }}
